@@ -5,6 +5,6 @@
     "armv7": "lscr.io/linuxserver/sonarr:arm32v7-latest"
   },
   "codenotary": {
-    "signer": "alexandrep.github@gmail.com"
+    "signer": "test@gmail.com"
   }
 }

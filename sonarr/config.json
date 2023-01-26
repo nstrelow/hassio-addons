@@ -1,9 +1,5 @@
 {
-  "arch": [
-    "aarch64",
-    "amd64",
-    "armv7"
-  ],
+  "arch": ["aarch64", "amd64", "armv7"],
   "codenotary": "alexandrep.github@gmail.com",
   "description": "Can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them",
   "devices": [
@@ -47,12 +43,7 @@
   },
   "image": "ghcr.io/alexbelgium/sonarr_nas-{arch}",
   "init": false,
-  "map": [
-    "config:rw",
-    "share:rw",
-    "media:rw",
-    "ssl"
-  ],
+  "map": ["config:rw", "share:rw", "media:rw", "ssl"],
   "name": "Sonarr NAS",
   "options": {
     "PGID": 0,
@@ -67,10 +58,7 @@
   "ports_description": {
     "8989/tcp": "web interface"
   },
-  "privileged": [
-    "SYS_ADMIN",
-    "DAC_READ_SEARCH"
-  ],
+  "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
   "schema": {
     "PGID": "int",
     "PUID": "int",
@@ -83,6 +71,6 @@
   },
   "slug": "sonarr_nas",
   "url": "https://github.com/alexbelgium/hassio-addons/tree/master/sonarr",
-  "version": "3.0.9.1549-2-bugfix-2",
+  "version": "develop-version-4.0.0.362",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8989]"
 }
